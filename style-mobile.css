@@ -1,0 +1,66 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  width: 95vw;
+  background: gray;
+}
+
+h1 {
+  font-style: italic;
+  color: orange;
+  text-align: center;
+}
+
+.song > h1 {
+  color: blue;
+}
+
+p {
+  text-align: justify;
+}
+
+iframe {
+  width: 200px;
+  height: 200px;
+}
+
+#main-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 95vw;
+  border-radius: 10px;
+  background: linear-gradient(136deg, #79d600, #46d4d4);
+
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+  grid-column-gap: 3px;
+  grid-row-gap: 1px;
+  grid-auto-rows: minmax(20px, auto);
+  margin: auto;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+
+.song {
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}

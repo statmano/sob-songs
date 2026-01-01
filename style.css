@@ -1,0 +1,68 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em 2em 5em 2em;
+  background: gray;
+}
+
+h1 {
+  font-style: italic;
+  color: orange;
+  text-align: center;
+}
+
+.song > h1 {
+  color: blue;
+}
+
+p {
+  text-align: justify;
+}
+
+#main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 95vw;
+  border-radius: 10px;
+  background: linear-gradient(136deg, #79d600, #46d4d4);
+
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+  grid-column-gap: 3px;
+  grid-row-gap: 1px;
+  grid-auto-rows: minmax(20px, auto);
+  margin: auto;
+  padding: 2em;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+
+.song {
+  align-self: start;
+  text-align: center;
+  padding: 15px;
+}
+
+.outer-text {
+  color: #fbfcd2;
+  padding: 0em 2em 0em 2em;
+  font-size: 1.5em;
+}
